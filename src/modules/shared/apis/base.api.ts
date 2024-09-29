@@ -7,7 +7,7 @@ export const headers = {
 const baseApi = createApi({
   reducerPath: 'api',
   baseQuery: fetchBaseQuery({
-    baseUrl: 'https://workplace-safety-vision-api-dev.azurewebsites.net/api',
+    baseUrl: 'https://google.com',
     headers
   }),
   endpoints: (builder) => ({
