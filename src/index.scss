@@ -1,0 +1,45 @@
+@import 'tailwindcss/base';
+
+@import 'tailwindcss/components';
+
+@import 'tailwindcss/utilities';
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+@layer base {
+  html {
+    font-family:
+      Lato,
+      system-ui sans-serif;
+  }
+}
+
+* {
+  margin: 0;
+}
+
+.ant-modal-close {
+  top: 22px !important;
+}
+
+.ant-avatar {
+  text-transform: capitalize !important;
+}
+
+/* Track */
+::-webkit-scrollbar {
+  width: 4px; /* width of the scrollbar */
+  height: 4px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; /* color of the scrollbar handle */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  /* color of the scrollbar handle on hover */
+  background-color: rgb(226, 219, 219);
+  outline: 0 solid rgb(242, 246, 250);
+}

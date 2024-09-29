@@ -1,0 +1,12 @@
+{
+  "routes": [
+    {
+      "route": "/private",
+      "allowedRoles": ["authenticated"]
+    },
+    {
+      "route": "/private/*",
+      "allowedRoles": ["authenticated"]
+    }
+  ]
+}

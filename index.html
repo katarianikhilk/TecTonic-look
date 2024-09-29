@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script>
+      var base_href = '/';
+      var tenantCode = null;
+      function setBaseHref() {
+        const pathName = window.location.pathname;
+        const pathSplit = pathName.split('/');
+        const anchorPrefix = pathSplit?.[1];
+        if (anchorPrefix === 'private') {
+          base_href = '/' + 'private/';
+        }
+        document.write("<base href='" + base_href + "' />");
+      }
+      setBaseHref();
+    </script>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./src/assets/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <title>Project</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="./src/main.tsx"></script>
+  </body>
+</html>
